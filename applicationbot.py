@@ -36,4 +36,4 @@ async def on_message(message):
         await message.channel.send("Accepted " + message.author.mention + "'s request for " + userContent + "!")
         connection.close()
 
-client.run("Njk2MDMyMTk2NDAxODIzODE2.Xoi0vQ.uUi1zJmFz5qzePXJBnKlVqu5Dos")
+client.run(token made private)
