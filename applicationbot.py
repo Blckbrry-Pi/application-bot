@@ -7,6 +7,8 @@ from datetime import datetime
 client = Bot(command_prefix = None)
 client.remove_command("help")
 
+const { token, apiKey, port } = require('./config.json');
+
 @client.event
 async def on_ready():
     await client.change_presence(status=discord.Status.online, activity=discord.Game(name="Filling out forms."))
@@ -36,4 +38,4 @@ async def on_message(message):
         await message.channel.send("Accepted " + message.author.mention + "'s request for " + userContent + "!")
         connection.close()
 
-client.run(token made private)
+client.run(token)
