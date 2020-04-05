@@ -27,7 +27,7 @@ async def on_message(message):
             await message.channel.send("```\nType in !apply4 before a job in order to apply. EG: !apply4 {JOBNAME}\n```\n```\nAVALIABLE JOBS:\nBug Catcher\nInventor\nAlien Researcher\n```")
             return
         else:
-            await message.channel.send(message.author.mention + " No such job found!\n```\nAVALIABLE JOBS:\nBug Catcher\nInventor\nAlien Researcher\n```")
+            await message.channel.send(message.author.mention + " No job known as \" + userContent + "\"!\n```\nAVALIABLE JOBS:\nBug Catcher\nInventor\nAlien Researcher\n```")
             return
         connection = sqlite3.connect("applyBot.db") 
         cursor = connection.cursor()
